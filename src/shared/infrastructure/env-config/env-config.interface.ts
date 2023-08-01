@@ -1,4 +1,4 @@
-export interface envConfig {
+export interface IEnvConfig {
   getAppPort(): number
   getNodeEnv(): string
 }
