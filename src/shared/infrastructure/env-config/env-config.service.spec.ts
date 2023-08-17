@@ -15,4 +15,8 @@ describe('EnvConfigService', () => {
   it('should be defined', () => {
     expect(service).toBeDefined()
   })
+
+  it('should be return a PORT of application', () => {
+    expect(service.getAppPort()).toBe(3000)
+  })
 })
