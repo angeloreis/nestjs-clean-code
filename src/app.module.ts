@@ -5,7 +5,7 @@ import { EnvConfigModule } from './shared/infra/env-config/env-config.module'
 import { UsersModule } from './users/infra/users.module'
 
 @Module({
-  imports: [EnvConfigModule, UsersModule],
+  imports: [EnvConfigModule.forRoot(), UsersModule],
   controllers: [AppController],
   providers: [AppService],
 })
