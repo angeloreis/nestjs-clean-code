@@ -13,7 +13,7 @@ export class UserEntity extends Entity<UserProps> {
     this.props.createdAt = this.props.createdAt ?? new Date()
   }
 
-  update(value: string): void {
+  updateName(value: string): void {
     this.setName(value)
   }
 
